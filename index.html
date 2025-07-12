@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Planet Table</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <table>
+            <caption>Data about the planets of our solar system (Planetary facts taken from
+                <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+            </caption>
+            <thead>
+                <tr>
+                    <th colspan="2" scope="colgroup"></th>
+                    <th id="name" scope="col">Name</th>
+                    <th id="mass" scope="col">Mass (10<sup>24</sup>kg)</th>
+                    <th id="diameter" scope="col">Diameter (km)</th>
+                    <th id="density" scope="col">Density (kg/m<sup>3</sup>)</th>
+                    <th id="gravity" scope="col">Gravity (m/s<sup>2</sup>)</th>
+                    <th id="day" scope="col">Length of day (hours)</th>
+                    <th id="distance" scope="col">Distance from Sun (10<sup>6</sup> km)</th>
+                    <th id="temperature" scope="col">Mean temperature (°C)</th>
+                    <th id="moons" scope="col">Number of moons</th>
+                    <th id="notes" scope="col">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2" rowspan="4" scope="rowgroup" id="terrestrial">Terrestrial planets</th>
+                    <th scope="row" id="mercury">Mercury</th>
+                    <td headers="mercury mass">0.330</td>
+                    <td headers="mercury diameter">4,879</td>
+                    <td headers="mercury density">5427</td>
+                    <td headers="mercury gravity">3.7</td>
+                    <td headers="mercury day">4222.6</td>
+                    <td headers="mercury distance">57.9</td>
+                    <td headers="mercury temperature">167</td>
+                    <td headers="mercury moons">0</td>
+                    <td headers="mercury notes">Closest to the Sun</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="venus">Venus</th>
+                    <td headers="venus mass">4.87</td>
+                    <td headers="venus diameter">12,104</td>
+                    <td headers="venus density">5243</td>
+                    <td headers="venus gravity">8.9</td>
+                    <td headers="venus day">2802.0</td>
+                    <td headers="venus distance">108.2</td>
+                    <td headers="venus temperature">464</td>
+                    <td headers="venus moons">0</td>
+                    <td headers="venus notes"></td>
+                </tr>
+                <tr>
+                    <th scope="row" id="earth">Earth</th>
+                    <td headers="earth mass">5.97</td>
+                    <td headers="earth diameter">12,756</td>
+                    <td headers="earth density">5514</td>
+                    <td headers="earth gravity">9.8</td>
+                    <td headers="earth day">24.0</td>
+                    <td headers="earth distance">149.6</td>
+                    <td headers="earth temperature">15</td>
+                    <td headers="earth moons">1</td>
+                    <td headers="earth notes">Our world</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="mars">Mars</th>
+                    <td headers="mars mass">0.642</td>
+                    <td headers="mars diameter">6,792</td>
+                    <td headers="mars density">3933</td>
+                    <td headers="mars gravity">3.7</td>
+                    <td headers="mars day">24.7</td>
+                    <td headers="mars distance">227.9</td>
+                    <td headers="mars temperature">-65</td>
+                    <td headers="mars moons">2</td>
+                    <td headers="mars notes">The red planet</td>
+                </tr>
+                <tr>
+                    <th rowspan="4" scope="rowgroup" id="jovian">Jovian planets</th>
+                    <th rowspan="2" scope="rowgroup" id="gas-giants">Gas giants</th>
+                    <th scope="row" id="jupiter">Jupiter</th>
+                    <td headers="jupiter mass">1898</td>
+                    <td headers="jupiter diameter">142,984</td>
+                    <td headers="jupiter density">1326</td>
+                    <td headers="jupiter gravity">23.1</td>
+                    <td headers="jupiter day">9.9</td>
+                    <td headers="jupiter distance">778.6</td>
+                    <td headers="jupiter temperature">-110</td>
+                    <td headers="jupiter moons">67</td>
+                    <td headers="jupiter notes">The largest planet</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="saturn">Saturn</th>
+                    <td headers="saturn mass">568</td>
+                    <td headers="saturn diameter">120,536</td>
+                    <td headers="saturn density">687</td>
+                    <td headers="saturn gravity">9.0</td>
+                    <td headers="saturn day">10.7</td>
+                    <td headers="saturn distance">1433.5</td>
+                    <td headers="saturn temperature">-140</td>
+                    <td headers="saturn moons">62</td>
+                    <td headers="saturn notes"></td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup" id="ice-giants">Ice giants</th>
+                    <th scope="row" id="uranus">Uranus</th>
+                    <td headers="uranus mass">86.8</td>
+                    <td headers="uranus diameter">51,118</td>
+                    <td headers="uranus density">1271</td>
+                    <td headers="uranus gravity">8.7</td>
+                    <td headers="uranus day">17.2</td>
+                    <td headers="uranus distance">2872.5</td>
+                    <td headers="uranus temperature">-195</td>
+                    <td headers="uranus moons">27</td>
+                    <td headers="uranus notes"></td>
+                </tr>
+                <tr>
+                    <th scope="row" id="neptune">Neptune</th>
+                    <td headers="neptune mass">102</td>
+                    <td headers="neptune diameter">49,528</td>
+                    <td headers="neptune density">1638</td>
+                    <td headers="neptune gravity">11.0</td>
+                    <td headers="neptune day">16.1</td>
+                    <td headers="neptune distance">4495.1</td>
+                    <td headers="neptune temperature">-200</td>
+                    <td headers="neptune moons">14</td>
+                    <td headers="neptune notes"></td>
+                </tr>
+                <tr>
+                    <th colspan="2" scope="rowgroup" id="dwarf">Dwarf planets</th>
+                    <th scope="row" id="pluto">Pluto</th>
+                    <td headers="pluto mass">0.0146</td>
+                    <td headers="pluto diameter">2,370</td>
+                    <td headers="pluto density">2095</td>
+                    <td headers="pluto gravity">0.7</td>
+                    <td headers="pluto day">153.3</td>
+                    <td headers="pluto distance">5906.4</td>
+                    <td headers="pluto temperature">-225</td>
+                    <td headers="pluto moons">5</td>
+                    <td headers="pluto notes">Declassified as a planet in 2006, but this <a
+                            href="https://eu.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains
+                            controversial.</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
